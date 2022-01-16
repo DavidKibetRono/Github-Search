@@ -20,6 +20,34 @@ export class GithubSearchService {
   this.myData = new User('', '', '', '', '', 0, 0, 0, 0, new Date());
   this.userRepositories = new Repository('', '', '', '', new Date());
 }
+//get user request
+getUserRequest(myGithubUsername: any) {
+  interface ApiResponse {
+    username: string;
+    login: string;
+    avatar_url: string;
+    html_url: string;
+    public_repos: number;
+    followers: number;
+    following: number;
+    public_gists: number;
+    created_at: Date;
+  }
+  let userRequestPromise = new Promise<void>((resolve, reject) =>
+    this.http.get<ApiResponse>('https://api.github.com/users/' + myGithubUsername +'?client_id=' +'&client_secret=' +this.personalToken
+      )
+      .toPromise().then((getUserResponse:any) => {
+          this.myData = getUserResponse;
+          resolve();
+        },
+        (error) => {
+          reject(error);
+          console.log(error);
+        }
+      )
+  );
+  return userRequestPromise;
+}
 
 
   // from homepage
