@@ -1,0 +1,62 @@
+
+.profile {
+    background-color: whitesmoke;
+    text-align: justify;
+    padding: 50px;
+    min-height: 600px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+.profileDetails {
+    /* border: 1px solid red; */
+    padding: 10px;
+    margin: 0px;
+    text-align: justify;
+}
+
+button {
+    /* width: 130px; */
+    height: 50px;
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+#hrBottom {
+    margin-top: 5px;
+    height: 1px;
+    color: brown;
+    border: unset;
+}
+
+.head1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ownRepos {
+    margin-top: 10px;
+}
+
+#repos {
+    width: 48%;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: unset;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid blueviolet;
+    background-color: white;
+}
+
+.view a {
+    text-decoration: none;
+    color: white;
+}
+
+.view {
+    width: 200px
+}
