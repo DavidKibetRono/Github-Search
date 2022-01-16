@@ -1,0 +1,23 @@
+.myNav {
+    height: 100px;
+    background-color: #F8F9FA;
+margin-top: 10px;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.myName {
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button{
+    width: 150px;
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#reposbtn{
+    width: 200px !important;
+
+}
