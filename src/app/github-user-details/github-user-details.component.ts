@@ -27,6 +27,7 @@ export class GithubUserDetailsComponent implements OnInit {
       (response: any) => {
         this.individualsInformation = this.githubSearchService.myData;
         this.userExist = true;
+        this.frm.reset()
       },
       (error:any) => {
         console.log(error);
