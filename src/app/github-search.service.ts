@@ -49,6 +49,31 @@ getUserRequest(myGithubUsername: any) {
   return userRequestPromise;
 }
 
+ //retrieve repositories
+ getRepository(githubUsername: any) {
+  interface ApiUserRepositoryResponse {
+    name: string;
+    html_url: string;
+    description: string;
+    created_at: Date;
+    language?: string;
+  }
+
+  let FetchedResultsPromise = new Promise<void>((resolve, reject) => {
+    this.http.get<ApiUserRepositoryResponse>('https://api.github.com/users/' +githubUsername +'/repos?client_id=' +this.personalToken
+      )
+      .toPromise().then((getRepositoryResponse:any) => {
+          this.userRepositories = getRepositoryResponse;
+          resolve();
+        },
+        (error) => {
+          reject(error);
+          console.log(error);
+        }
+      );
+  });
+  return FetchedResultsPromise;
+}
 
   // from homepage
 
