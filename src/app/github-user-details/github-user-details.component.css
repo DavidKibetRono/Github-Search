@@ -1,0 +1,64 @@
+.owner {
+    background-color: whitesmoke;
+height:700px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.inputfield {
+    height: 50px;
+    width: 50%;
+    /* float: left; */
+}
+form{
+    /* background-color: red; */
+    padding-left: 400px;
+}
+img {
+    width: 400px;
+    height: 400px;
+}
+
+#myBtn {
+    height: 50px;
+    margin-left: 10px;
+}
+
+#myBtn {
+    /* transform: scale(1.2); */
+    font-size: 25px;
+    color: white;
+}
+
+label {
+    font-size: 30px;
+}
+
+::placeholder {
+    color: black;
+}
+
+input {
+    border: 2px solid green
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#visitbtn {
+    padding: 20px;
+    margin-left: 200px;
+    margin-top: 5px;
+}
+
+#visitbtn:hover {
+    background-color: peru;
+    font-size: 20px;
+}
+
+.btns {
+    margin-left: 20px;
+}
