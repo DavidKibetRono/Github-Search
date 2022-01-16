@@ -30,6 +30,7 @@ myRepositories!:Repository;
         (response:any) => {
           this.totalRepositories = this.githubSearchService.userRepositories;
           this.displayUserRepos = true;
+          this.searchRepoForm.reset()
         },
         (error:any) => {
           console.log(error);
