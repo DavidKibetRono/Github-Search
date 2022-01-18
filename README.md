@@ -22,7 +22,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Live link
 
-Click  <a href=""> Github Search App</a> to view the application.
+Click  <a href="https://davidkibetrono.github.io/Github-Search/profile"> Github Search App</a> to view the application.
 
 
 
